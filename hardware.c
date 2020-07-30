@@ -178,7 +178,7 @@ void gpsEvent()
 			 //SMS message sent to family member or friend (optional)
 			 GSM_serial.println("AT+CMGF=1");
 			 delay(1000);
-			 GSM_serial.println("AT+CMGS=\"+918310826023\"\r"); //mobile number
+			 GSM_serial.println("AT+CMGS=\"+91XXXXXXXXXX\"\r"); //mobile number
 			 delay(1000);
 			 GSM_serial.println("Accident has been detected at the following location. Alert has been sent to nearby hospital.");
 			 GSM_serial.println("Latitude:");
