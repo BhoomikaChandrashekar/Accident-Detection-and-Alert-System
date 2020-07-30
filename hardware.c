@@ -158,7 +158,7 @@ void gpsEvent()
 			 ShowSerialData();
 
 			 String str="GET https://api.thingspeak.com/update?
-			 api_key=08FY5SR8KCQVNZN1&field4=" + latitude +"&field5="+longitude;
+			 api_key=YYYYYYYY&field4=" + latitude +"&field5="+longitude; //YYYYYY=api key of thingspeak to upload data to the cloud
 			 Serial.println(str);
 			 GSM_serial.println(str);//begin send data to remote server
 
