@@ -113,8 +113,8 @@ while(True):
     response = conn.read()
     data=json.loads(response)
     # print(data)
-    lat1=float(data['field4'])
-    long1=float(data['field5'])
+    lat1=float(data['field4']) #Field number from thingspeak account
+    long1=float(data['field5']) #Field number from thingspeak account
     if lat1!=lat and long1!=lon:
         map(lat1,long1)
         lat=lat1
